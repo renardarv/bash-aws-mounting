@@ -47,7 +47,7 @@ apt-get install -y php-fpm php-mysql mysql-server
 
 
 
-# Mounting S3 to instance
+# Mount S3 to instance
 echo "Installing depedency S3 ..."
 sudo apt update
 sudo apt install -y automake autotools-dev fuse g++ git libcurl4-gnutls-dev libfuse-dev libssl-dev libxml2-dev make pkg-config
@@ -72,7 +72,7 @@ sudo echo s3fs $bucket_name /mys3bucket/app-sosmed -o use_cache=/tmp -o allow_ot
 
 
 
-# Installing app sosmed
+# Install app sosmed
 echo "Installing app sosmed ..."
 sudo chmod -Rf +rwx /mys3bucket/app-sosmed/*
 sudo cp -r /mys3bucket/app-sosmed /var/www/html
